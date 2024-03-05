@@ -1,0 +1,95 @@
+.table {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+  .row {
+    margin: 16px 0;
+    height: 1.2px !important;
+    width: 1200px !important;
+    background-color: #ccc !important;
+  }
+  thead {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+
+    tr {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      .id {
+        width: 0;
+      }
+      th {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: bold;
+        width: 110px;
+      }
+    }
+  }
+  tbody {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+
+    tr {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      .id {
+        width: 0;
+      }
+      td {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: 300;
+        gap: 6px;
+        width: 120px;
+        .btn1 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          color: #fff;
+          border-radius: 6px;
+          height: 30px;
+          border: 0;
+          transition: all 0.3s;
+          cursor: pointer;
+          outline: none;
+          background-color: rgb(34, 130, 4);
+        }
+        .btn1:hover {
+          background-color: rgb(87, 213, 48);
+        }
+        .btn2 {
+          display: flex;
+          border: 0;
+          transition: all 0.3s;
+          cursor: pointer;
+          border-radius: 6px;
+          align-items: center;
+          color: #fff;
+          justify-content: center;
+          width: 50px;
+          height: 30px;
+          background-color: tomato;
+        }
+        .btn2:hover {
+          background-color: rgb(203, 122, 108);
+        }
+      }
+    }
+  }
+}
